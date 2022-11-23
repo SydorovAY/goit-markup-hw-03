@@ -1,0 +1,175 @@
+/* normalize.css */
+@import url("./normalize.css");
+
+/* colors */
+:root {
+  --Focused-link-color: #4d5ae5;
+  --button-active-color: #404bbf;
+  --Headings-color: #2e2f42;
+  --Success-messages-color: #31d0aa;
+  --Body-text-color: #434455;
+  --Helper-text-color: #8e8f99;
+  --Subtle-backgrounds-color: #e7e9fc;
+  --backgrounds-Light-color: #f4f4fd;
+  --bg-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-white-color);
+  color: var(--Body-text-color);
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title,
+.nav-link {
+  color: var(--Headings-color);
+  font-weight: 600;
+}
+
+/* header */
+
+.logo {
+  color: var(--Headings-color);
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.prymary-brand {
+  color: var(--Focused-link-color);
+}
+
+.nav-link:hover {
+  color: var(--Body-text-color);
+}
+
+.nav-link:focus {
+  color: var(--Focused-link-color);
+}
+
+.current {
+  color: var(--Focused-link-color);
+}
+
+/* contacts  */
+
+.contacts-link {
+  color: var(--Body-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--Focused-link-color);
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--Headings-color);
+}
+
+.hero .title {
+  color: var(--bg-white-color);
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+.button-order {
+  background-color: var(--Focused-link-color);
+  color: var(--bg-white-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--Focused-link-color);
+}
+
+.button-order:active {
+  background-color: var(--button-active-color);
+}
+
+/* section  */
+.feature-title,
+.portfolio-primary-title,
+.portfolio-filter-title,
+.portfolio-img-title {
+  opacity: 0;
+}
+
+.specialization-title,
+.our-team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+
+.list-title,
+.team-title,
+.portfolio-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* section our team */
+
+.team {
+  background-color: var(--Subtle-backgrounds-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--Headings-color);
+}
+
+.logo-footer {
+  color: var(--backgrounds-Light-color);
+}
+
+.footer-summary {
+  color: var(--Subtle-backgrounds-color);
+}
+
+/* portfolio style */
+
+.butoon-filter {
+  background-color: var(--backgrounds-Light-color);
+  color: var(--Focused-link-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.butoon-filter:hover,
+.butoon-filter:focus {
+  background-color: var(--Focused-link-color);
+  color: var(--bg-white-color);
+}
+
+.portfolio-type {
+  color: var(--Body-text-color);
+}
