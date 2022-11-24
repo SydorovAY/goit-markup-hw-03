@@ -84,7 +84,11 @@ body {
 }
 
 /* hero */
- 
+.section-hero {
+	text-align: center;
+padding: 192px 0 192px 0;
+}
+
 .hero {
   background-color: var(--Headings-color);
 }
@@ -132,8 +136,14 @@ top: 432px; */
 }
 
 /* section  */
-.section {
+
+.section.feature,
+.section.team
+ {
 	padding: 120px 0 120px 0 ;
+}
+.section.specialization {
+	padding-bottom: 120px;
 }
 
 .feature-title,
@@ -159,10 +169,10 @@ top: 432px; */
 
 /* section our team */
 
-.team {
+ .our-team {
   background-color: var(--Subtle-backgrounds-color);
-}
 
+}
 /* footer */
 .footer {
   background-color: var(--Headings-color);
@@ -177,6 +187,13 @@ top: 432px; */
 }
 
 /* portfolio style */
+.section.portfolio-nav {
+	padding: 96px 0 72px 0;
+}
+
+.section.portfolio-content{
+padding-bottom: 120px;
+}
 
 .butoon-filter {
   background-color: var(--backgrounds-Light-color);
@@ -198,3 +215,4 @@ top: 432px; */
 .portfolio-type {
   color: var(--Body-text-color);
 }
+
