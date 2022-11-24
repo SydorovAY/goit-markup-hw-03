@@ -48,7 +48,7 @@ body {
 
 .logo {
   color: var(--Headings-color);
-  font-family: "Raleway";
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -84,7 +84,7 @@ body {
 }
 
 /* hero */
-
+ 
 .hero {
   background-color: var(--Headings-color);
 }
