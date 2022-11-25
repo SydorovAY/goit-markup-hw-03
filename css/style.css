@@ -37,7 +37,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 1440px;
+  outline: auto rgb(250, 40, 3);
 }
+
+.section {outline: auto rgb(250, 0, 0);}
 
 .list {
   list-style: none;
@@ -47,6 +51,12 @@ body {
   text-decoration: none;
 }
 
+.main-hero,
+.our-team-title,
+.specialization-title {
+	text-align: center;
+}
+
 .title,
 .nav-link {
   color: var(--Headings-color);
@@ -54,9 +64,12 @@ body {
 }
 
 /* header */
+
 .conteiner {
   width: 1158px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
+  outline: auto rgba(0, 98, 255, 0.685);
 }
 
 .logo {
@@ -97,20 +110,17 @@ body {
 }
 
 /* hero */
-.main-hero {
-  text-align: center;
-  padding: 192px 0 192px 0;
-}
 
-.hero {
+.main-hero {
+  padding: 192px 0 192px 0;
   background-color: var(--Headings-color);
 }
 
-.hero .title {
+.main-hero .title {
   color: var(--bg-white-color);
   font-size: 56px;
   line-height: 1.07;
-  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .button-order {
@@ -138,12 +148,12 @@ body {
 
 /* section  */
 
-.section.feature,
-.section.team {
+.section-feature,
+.section-team {
   padding: 120px 0 120px 0;
-} 
+}
 
-.section.specialization {
+.section-specialization {
   padding-bottom: 120px;
 }
 
@@ -159,6 +169,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .list-title,
@@ -170,9 +181,8 @@ body {
 
 /* section our team */
 
-.our-team {
+.section-team {
   background-color: var(--Subtle-backgrounds-color);
-
 }
 /* footer */
 .footer {
@@ -188,12 +198,8 @@ body {
 }
 
 /* portfolio style */
-.section.portfolio-nav {
-  padding: 96px 0 72px 0;
-}
-
-.section.portfolio-content {
-  padding-bottom: 120px;
+.section-portfolio {
+  padding: 96px 0 120px 0;
 }
 
 .butoon-filter {
@@ -217,3 +223,4 @@ body {
   color: var(--Body-text-color);
 }
 
+ .conteiner.portfolio-filter {margin-bottom: 72px;}
