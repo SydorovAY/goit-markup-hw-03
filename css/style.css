@@ -68,7 +68,12 @@ body {
 }
 
 /* header */
-
+.conteiner.main,
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+ 
 .conteiner {
   width: 1158px;
   padding: 0 15px 0 15px;
@@ -84,19 +89,21 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-right: 77px;
+  padding: 24px 0;
 }
 
 .prymary-brand {
   color: var(--Focused-link-color);
 }
-.site-nav {
-  display: flex;
-  outline: auto green;
-}
 
 .site-nav .nav-list + .nav-list {
   margin-left: 40px;
-  outline: auto darkgreen;
+}
+
+.nav-link {
+	padding: 24px 0;
 }
 
 .nav-link:hover {
@@ -112,14 +119,18 @@ body {
 }
 
 /* contacts  */
+.contacts.list {
+	display: flex;
+	margin-left: auto;
+}
 
 .contacts .contacts-list + .contacts-list {
   margin-left: 40px;
-  outline: auto rgb(0, 96, 32);
 }
 
 .contacts-link {
   color: var(--Body-text-color);
+  padding: 24px 0;
 }
 
 .contacts-link:hover,
