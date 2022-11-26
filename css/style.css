@@ -54,7 +54,7 @@ body {
 .main-hero,
 .our-team-title,
 .specialization-title {
-	text-align: center;
+  text-align: center;
 }
 
 .title,
@@ -120,6 +120,7 @@ body {
   color: var(--bg-white-color);
   font-size: 56px;
   line-height: 1.07;
+
   margin-bottom: 48px;
 }
 
@@ -169,6 +170,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
+
   margin-bottom: 72px;
 }
 
@@ -177,6 +179,8 @@ body {
 .portfolio-title {
   font-size: 20px;
   line-height: 1.2;
+
+  margin-bottom: 8px;
 }
 
 /* section our team */
@@ -191,6 +195,9 @@ body {
 
 .logo-footer {
   color: var(--backgrounds-Light-color);
+
+   display: block;
+  margin-bottom: 16px;
 }
 
 .footer-summary {
@@ -200,6 +207,10 @@ body {
 /* portfolio style */
 .section-portfolio {
   padding: 96px 0 120px 0;
+}
+
+.conteiner.portfolio-filter {
+  margin-bottom: 72px;
 }
 
 .butoon-filter {
@@ -223,4 +234,3 @@ body {
   color: var(--Body-text-color);
 }
 
- .conteiner.portfolio-filter {margin-bottom: 72px;}
