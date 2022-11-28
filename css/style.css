@@ -189,34 +189,17 @@ img {
   background-color: var(--button-active-color);
 }
 
-/*================ section ===============*/
+/* ===== section-feature ===== */
 
-/*==== param =====*/
-
-.specialization-title,
-.our-team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
-
-.team-title {
-  font-size: 20px;
-  line-height: 1.2;
-
-  margin-top: 32px;
-  margin-bottom: 8px;
+.feature-title {
+	display: none;
 }
 
 .list-title {
+	font-weight: 600;
+	font-size: 20px;
   line-height: 1.2;
   margin-bottom: 8px;
-}
-
-/* ===== section-feature ===== */
-.feature-title {
-	display: none;
 }
 
 .section-feature,
@@ -225,51 +208,73 @@ img {
 }
 
 .feature-list {
-	margin-left: -24px;
+	margin-left: var(--card-set-gap);
 	}
 
 .feature-list>.item {
- flex-basis: calc(100%/4 - 24px);
- margin-left: 24px;
+ flex-basis: calc(100%/4 - var(--card-set-gap));
+ margin-left: var(--card-set-gap);
   }
 
 /* ===== section specialization ===== */
 
-.section-specialization {
+.section.specialization {
   padding-bottom: 120px;
 }
 
+.specialization-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
 .specialization-list {
-	margin-left: -24px ;
+	margin-left: calc(-1 * var(--card-set-gap)) ;
 }
 
 .specialization-list>.item {
- flex-basis: calc(100% / 3 - 24px);
-  margin-left: 24px;
+ flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
 }
 
 /* ===== section our team ===== */
 
 .section.team {
-  background-color: var(--Subtle-backgrounds-color);
+  background-color: var(--backgrounds-Light-color);
   padding-top: 120px;
   padding-bottom: 120px ;
 }
 
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+
 .team-list {
-margin-left: -24px;
+margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.card {
- flex-basis: calc(100% / 5 -24px);
-  margin-left: 24px;
-
-  text-align: center;
+.team-list>.card {
   background-color: var(--bg-white-color);
+  text-align: center;
+
+ flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap); 
 }
 
-.specialty {
-  margin-bottom: 32px;
+.card-content {
+padding: 32px 16px;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.card-content>.specialty {
+	margin-top: 8px;
 }
 
 /* ================ footer ============= */
@@ -351,7 +356,7 @@ justify-content: left;
 }
 
 .portfolio-list>.item {
- flex-basis: calc(100% / 3 - 24px);
+ flex-basis: calc(100% / 3 - 2var(--card-set-gap));
  
  
   margin-top: var(--card-set-gap);
