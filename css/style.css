@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -15,7 +16,6 @@ ul {
   padding: 0;
 }
 
-/* colors */
 :root {
   --Focused-link-color: #4d5ae5;
   --button-active-color: #404bbf;
@@ -26,7 +26,10 @@ ul {
   --Subtle-backgrounds-color: #e7e9fc;
   --backgrounds-Light-color: #f4f4fd;
   --bg-white-color: #ffffff;
+  --card-set-gap: 24px;
 }
+
+/* ============== param ============ */
 
 body {
   background-color: var(--bg-white-color);
@@ -37,7 +40,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 1440px;
+  min-width: 1440px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .list {
@@ -62,17 +71,21 @@ body {
   font-weight: 700;
 }
 
-/* ==================== header ==================== */
-.conteiner.main,
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 .conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 1158px;
   padding: 0 15px 0 15px;
-  margin: 0 auto;
+  margin: auto;
+  padding: auto;
+}
+
+/* ==================== header ==================== */
+
+.conteiner.main {
+	align-items: center;
+	justify-content:left;
 }
 
 .logo {
@@ -92,12 +105,16 @@ body {
   color: var(--Focused-link-color);
 }
 
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+ 
 .site-nav .nav-list + .nav-list {
   margin-left: 40px;
 }
 
 .nav-link {
-  display: block;
   padding: 24px 0;
 }
 
@@ -113,9 +130,10 @@ body {
   color: var(--Focused-link-color);
 }
 
-/* contacts  */
-.contacts.list {
-  margin-left: auto;
+/* ===== contacts=====  */
+
+.contacts-list {
+	margin-left: 331px;
 }
 
 .contacts .contacts-list + .contacts-list {
@@ -124,8 +142,7 @@ body {
 
 .contacts-link {
   color: var(--Body-text-color);
-  display: block;
-  padding: 24px 0;
+  padding: 24px 0 ;
 }
 
 .contacts-link:hover,
@@ -172,9 +189,10 @@ body {
   background-color: var(--button-active-color);
 }
 
-/*======================= section ===================  */
+/*================ section ===============*/
 
-/* title param */
+/*==== param =====*/
+
 .specialization-title,
 .our-team-title {
   font-size: 36px;
@@ -183,8 +201,7 @@ body {
   margin-bottom: 72px;
 }
 
-.team-title,
-.portfolio-title {
+.team-title {
   font-size: 20px;
   line-height: 1.2;
 
@@ -192,121 +209,117 @@ body {
   margin-bottom: 8px;
 }
 
-.feature-title,
-.portfolio-primary-title,
-.portfolio-filter-title,
-.portfolio-img-title {
-  opacity: 0;
-}
-
 .list-title {
   line-height: 1.2;
   margin-bottom: 8px;
 }
 
-/* section-feature */
+/* ===== section-feature ===== */
+.feature-title {
+	display: none;
+}
 
 .section-feature,
 .section-team {
   padding: 120px 0 120px 0;
 }
 
-.feature-list .item {
-  width: 264px;
-  margin-right: 24px;
-  display: block;
-}
+.feature-list {
+	margin-left: -24px;
+	}
 
-.feature-list :last-child {
-  margin-right: 0;
-}
+.feature-list>.item {
+ flex-basis: calc(100%/4 - 24px);
+ margin-left: 24px;
+  }
 
-/* <!-- section specialization --> */
+/* ===== section specialization ===== */
 
 .section-specialization {
   padding-bottom: 120px;
 }
-.conteiner .specialization {
-  display: flex;
+
+.specialization-list {
+	margin-left: -24px ;
 }
 
-.specialization-list .item {
-  width: 360;
-  margin-right: 24px;
-  display: block;
-}
-.specialization-list :last-child {
-	margin: 0;
+.specialization-list>.item {
+ flex-basis: calc(100% / 3 - 24px);
+  margin-left: 24px;
 }
 
-/* section our team */
+/* ===== section our team ===== */
 
-.section-team {
+.section.team {
   background-color: var(--Subtle-backgrounds-color);
+  padding-top: 120px;
+  padding-bottom: 120px ;
 }
 
-.conteiner .team {
-	display: flex;
+.team-list {
+margin-left: -24px;
 }
 
-.card{
-width: 264;
-height: 380;
-margin-right: 24px;
-text-align: center;
-}
+.card {
+ flex-basis: calc(100% / 5 -24px);
+  margin-left: 24px;
 
-.team-list .item {
-width: 264;
-height: 260;
-background-color: var(--bg-white-color);
-}
-
-.team-list :last-child{
-	margin: 0;
+  text-align: center;
+  background-color: var(--bg-white-color);
 }
 
 .specialty {
-	padding-bottom: 32px;
+  margin-bottom: 32px;
 }
-/* footer */
+
+/* ================ footer ============= */
 .footer {
   background-color: var(--Headings-color);
 }
 
-.footer-column {
-	display: flex;
-	display: block;
-	width: 264px;
-	padding: 100px 0;
-	margin: 100px 0;
-	justify-content:flex-start
+.footer .conteiner {
+justify-content: left;
 }
 
-.logo-footer {
-	display: block;
+.conteiner-summary {
+  padding: 100px 0;
+}
+
+.footer .logo {
   color: var(--backgrounds-Light-color);
-  margin:0;
+  display: block;
+  margin: 0 0 16px 0;
   padding: 0;
 }
 
-.footer-summary {
+.footer .summary {
   color: var(--Subtle-backgrounds-color);
-  margin-top: 16px;
+  width: 264px;
+}
+/* ===================== portfolio ======================== */
+
+/* ===== portfolio style ===== */
+
+.section.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
-/* portfolio style */
-.section-portfolio {
-  padding: 96px 0 120px 0;
+.portfolio-primary-title,
+.portfolio-filter-title,
+.portfolio-img-title {
+  display: none;
 }
+
+/* ===== portfolio filter ===== */
 
 .filter-nav {
+  margin: auto;
   margin-bottom: 72px;
 }
 
 .filter-nav .filter-nav-btn + .filter-nav-btn {
   margin-left: 24px;
-  outline: auto red;
 }
 
 .butoon-filter {
@@ -329,6 +342,32 @@ background-color: var(--bg-white-color);
   color: var(--bg-white-color);
 }
 
+
+/* ===== portfolio list ===== */
+
+.portfolio-list {
+	margin-top: calc(-1 * var(--card-set-gap));
+	margin-left:calc(-1 * var(--card-set-gap));
+}
+
+.portfolio-list>.item {
+ flex-basis: calc(100% / 3 - 24px);
+ 
+ 
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
+
+.list-content {
+	padding: 32px 16px;
+}
+
+.portfolio-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .portfolio-type {
   color: var(--Body-text-color);
+  margin-top: 8px;
 }
