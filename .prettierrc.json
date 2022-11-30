@@ -1,7 +1,6 @@
 {
 	"arrowParens": "avoid",
 	"bracketSpacing": true,
-	"htmlWhitespaceSensitivity": "strict",
 	"insertPragma": false,
 	"jsxBracketSameLine": false,
 	"jsxSingleQuote": false,
@@ -15,5 +14,4 @@
 	"tabWidth": 2,
 	"trailingComma": "all",
 	"useTabs": true
-}
 }
