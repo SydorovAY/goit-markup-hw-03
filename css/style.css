@@ -116,7 +116,7 @@ img {
 	color: var(--Body-text-color);
 }
 
-.nav-link:active{
+.nav-link:active {
 	color: var(--Focused-link-color);
 }
 
@@ -341,7 +341,7 @@ img {
 	color: var(--bg-white-color);
 }
 
-.butoon-filter:active  {
+.butoon-filter:active {
 	background-color: var(--Focused-link-color);
 	color: var(--bg-white-color);
 }
