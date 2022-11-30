@@ -189,8 +189,9 @@ img {
 
 /* ===== section-feature ===== */
 
-.feature-title {
-	display: none;
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
 }
 
 .list-title {
@@ -308,6 +309,12 @@ img {
 .portfolio-img-title {
 	display: none;
 }
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 
 /* ===== portfolio filter ===== */
 
