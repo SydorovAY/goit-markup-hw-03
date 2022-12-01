@@ -76,6 +76,11 @@ img {
 	padding: auto;
 }
 
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
+}
+
 /* ==================== header ==================== */
 
 .header {
@@ -125,6 +130,7 @@ img {
 .current {
 	color: var(--Focused-link-color);
 }
+
 /* ===== contacts=====  */
 
 .contacts-list {
@@ -193,11 +199,6 @@ img {
 }
 
 /* ===== section-feature ===== */
-
-.visually-hidden {
-	position: fixed;
-	transform: scale(0);
-}
 
 .list-title {
 	font-weight: 600;
@@ -282,6 +283,7 @@ img {
 }
 
 /* ================ footer ============= */
+
 .footer {
 	background-color: var(--Headings-color);
 }
@@ -302,16 +304,9 @@ img {
 
 /* =================== portfolio ==================== */
 
-/* ===== portfolio style ===== */
-
 .section.portfolio {
 	padding-top: 96px;
 	padding-bottom: 120px;
-}
-
-.visually-hidden {
-	position: fixed;
-	transform: scale(0);
 }
 
 /* ===== portfolio filter ===== */
