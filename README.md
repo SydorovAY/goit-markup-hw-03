@@ -1,6 +1,10 @@
 # goit-markup-hw-03
 
-Використано modern-normalize.css
+Використано:
+
+modern-normalize.css
+
+.visually-hidden для Headers
 
 ================== fonts =================
 
