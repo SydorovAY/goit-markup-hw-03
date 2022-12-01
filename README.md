@@ -2,6 +2,8 @@
 
 Використано modern-normalize.css
 
+.visually-hidden для Headers
+
 ================== fonts =================
 
 Google - Raleway:700;800 , Roboto:400;500;700;900  
