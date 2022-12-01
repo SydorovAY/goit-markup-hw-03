@@ -184,6 +184,7 @@ img {
 	display: block;
 	background-color: var(--Focused-link-color);
 	color: var(--bg-white-color);
+	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.19;
 	letter-spacing: 0.04em;
@@ -328,6 +329,7 @@ img {
 .butoon-filter {
 	background-color: var(--backgrounds-Light-color);
 	color: var(--Focused-link-color);
+	font-family: inherit;
 	font-weight: 700;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
