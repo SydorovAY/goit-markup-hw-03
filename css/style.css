@@ -40,6 +40,8 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -156,10 +158,13 @@ img {
 }
 
 .hero > .title {
+	display: block;
 	color: var(--bg-white-color);
 	font-size: 56px;
 	line-height: 1.07;
 
+	width: 492px;
+	margin: auto;
 	margin-bottom: 48px;
 }
 
@@ -295,7 +300,7 @@ img {
 	padding: 0;
 }
 
-/* ===================== portfolio ======================== */
+/* =================== portfolio ==================== */
 
 /* ===== portfolio style ===== */
 
@@ -304,17 +309,10 @@ img {
 	padding-bottom: 120px;
 }
 
-.portfolio-primary-title,
-.portfolio-filter-title,
-.portfolio-img-title {
-	display: none;
-}
-
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+	position: fixed;
+	transform: scale(0);
 }
-
 
 /* ===== portfolio filter ===== */
 
